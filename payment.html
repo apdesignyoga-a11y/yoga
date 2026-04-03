@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>יוגה בשיכון - הרשמה ותשלום</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-green: #89a38b; --soft-green: #e9f0e9; --soft-brown: #a68a7b; --text-dark: #4a4a4a; --white: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Heebo', sans-serif; }
+        body { background-color: var(--white); color: var(--text-dark); line-height: 1.6; }
+
+        /* Navbar (Static version for payment page) */
+        nav { background: var(--soft-brown); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-weight: 700; font-size: 1.5rem; color: var(--white); text-decoration: none; }
+        .nav-links { display: flex; list-style: none; gap: 20px; }
+        .nav-links a { text-decoration: none; color: var(--white); font-weight: 400; }
+
+        section { padding: 60px 10%; text-align: center; }
+        .section-title { margin-bottom: 20px; font-size: 2.2rem; color: var(--primary-green); }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .price-card { background: var(--soft-green); padding: 40px 20px; border-radius: 20px; border: 1px solid #d0ddd0; transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .price-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        
+        .price-name { font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; color: var(--text-dark); }
+        .price-amount { font-size: 2rem; color: var(--primary-green); font-weight: 700; margin-bottom: 20px; }
+        .price-desc { margin-bottom: 30px; min-height: 60px; }
+
+        .bit-btn { background-color: #00d1c1; color: white; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: 700; display: block; transition: 0.3s; }
+        .bit-btn:hover { background-color: #00b8a9; }
+        
+        .back-home { margin-top: 40px; display: inline-block; color: var(--soft-brown); text-decoration: none; font-weight: 700; }
+
+        @media (max-width: 768px) { .nav-links { display: none; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">יוגה בשיכון</a>
+        <ul class="nav-links">
+            <li><a href="index.html">חזרה לדף הבית</a></li>
+            <li><a href="https://wa.me/972502006740" target="_blank">עזרה בתשלום</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 class="section-title">הצטרפות לשיעורים</h2>
+        <p>בחרי את המנוי המתאים לך ועברי לתשלום מאובטח בביט</p>
+
+        <div class="grid">
+            <div class="price-card">
+                <div>
+                    <div class="price-name">מנוי חודשי - שיעור בשבוע</div>
+                    <div class="price-amount">280 ₪</div>
+                    <p class="price-desc">תרגול קבוע פעם בשבוע ביום ושעה קבועים.</p>
+                </div>
+                <a href="https://bit.ly/pay-to-972502006740" class="bit-btn">להרשמה לחודש הקרוב לחצו – כאן bit</a>
+            </div>
+
+            <div class="price-card">
+                <div>
+                    <div class="price-name">מנוי חודשי גמיש</div>
+                    <div class="price-amount">300 ₪</div>
+                    <p class="price-desc">שיעור קבוע בשבוע + 2 שיעורים נוספים על בסיס מקום פנוי (סה"כ 6 שיעורים בחודש).</p>
+                </div>
+                <a href="https://bit.ly/pay-to-972502006740" class="bit-btn">להרשמה לחודש הקרוב לחצו – כאן bit</a>
+            </div>
+
+            <div class="price-card">
+                <div>
+                    <div class="price-name">מנוי חודשי – פעמיים בשבוע</div>
+                    <div class="price-amount">400 ₪</div>
+                    <p class="price-desc">העמקת התרגול עם שני מפגשים שבועיים.</p>
+                </div>
+                <a href="https://bit.ly/pay-to-972502006740" class="bit-btn">להרשמה לחודש הקרוב לחצו – כאן bit</a>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> חזרה לדף הבית</a>
+    </section>
+
+</body>
+</html>
